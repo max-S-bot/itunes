@@ -1,13 +1,23 @@
-* {
-    font-family: sans-serif;
-    padding: 10px;
-    background: lightskyblue;
-}
 
-#output {
-}
-
-button {
-    background: yellow;
-    color: black;
-}
+html {
+    background-color: rgba(0, 255, 76, 0.834);
+    text-align: center;
+    
+  }
+  
+  #output {
+      display:none;
+  }
+  
+  button {
+      background: yellow;
+      color: black;
+  }
+  
+  table {
+    display: block;
+  }
+  
+  td {
+    border: 1px solid black;
+  }
