@@ -1,0 +1,28 @@
+
+html {
+  background-color: rgba(0, 255, 76, 0.834);
+  text-align: center;
+  
+}
+  
+
+
+table {
+  margin: 0 auto;
+}
+
+
+#output {
+    display:none;
+}
+
+button {
+    background: yellow;
+    color: black;
+}
+
+
+
+td {
+  border: 1px solid black;
+}
