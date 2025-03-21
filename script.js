@@ -40,7 +40,7 @@ document.getElementById("run").addEventListener("click",run);
 function run() {
     var artist = document.getElementById("menu").value;
     var limit = document.getElementById("numResults").value;
-    
+    if(limit=="" || isNaN(Number(limit))){limit=10}
     if (artist!=""){
     $.ajax({
         url: 'https://itunes.apple.com/search?entity=musicTrack&attribute=allArtistTerm&term=' + artist + "&limit=" + limit,
@@ -66,9 +66,7 @@ function process(data) {
     }
     table.appendChild(row);
     for(var r=1; r<=songs.length; r++) {
-
         row = document.createElement("tr");
-        
         //build the cols
         for(var c=0; c<cols.length; c++) {
             
